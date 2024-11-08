@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel V</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/EMV.png') }}" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/EMV Logo.png') }}" alt="Website Logo" id="website-logo">
+                Emmanuel V
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="hero">
+            <div id="particles-js"></div>
+            <div class="hero-content">
+                <h1>Emmanuel Melchizedek Vunnava</h1>
+                <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                <a href="https://drive.google.com/file/d/1dRA6mDbmX6UMcZup2QqtZnKA3Mkt0Q2T/view?usp=drive_link" class="btn" target="_blank">Resume</a>
+            </div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="about-header">
+                <h3>Get To Know More</h3>
+                <h2>About Me</h2>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="icon-container">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Experience</h3>
+                    <p>Data Science Intern</p>
+                    <div class="line"></div>
+                    <p>Frontend Development</p>
+                </div>
+                <div class="stat-box">
+                    <div class="icon-container">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>B.Tech. Computer Science</p>
+                    <div class="line"></div>
+                    <p>MS in Computer Science</p>
+                </div>
+            </div>
+        
+            <div class="about-description">
+                <p>As a dedicated computer science graduate 🎓 with a keen eye for detail, I have a strong foundation in software development, data analysis, Artificial Intelligence (AI) 🤖, and Machine Learning (ML) 📊. Currently pursuing my MS in Computer Science at Florida Atlantic University, I'm eager to tackle complex challenges in our evolving tech landscape.</p>
+                <p>With hands-on experience in web development 🌐 and data science, I blend technical skills with creative problem-solving 💡. My goal is to join a dynamic team where I can grow, work on exciting projects, and develop innovative solutions that make a real impact using AI and ML.</p>
+                <p>When I'm not coding, you can find me exploring the latest tech trends 📈, contributing to open-source projects, or brainstorming ideas for my next big project. Let's connect and create something amazing together! 🚀</p>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in">
+            <h2>Education 🎓</h2>
+            <div class="education-item">
+                <h3>Florida Atlantic University</h3>
+                <p>MS in Computer Science | Jan 2023 – (exp)Dec 2025</p>
+                <p>GPA: 4.0/4.0</p>
+            </div>
+            <div class="education-item">
+                <h3>MLR Institute of Technology</h3>
+                <p>B.Tech in Computer Science | Aug 2019 – May 2023</p>
+                <p>GPA: 3.0/4.0</p>
+            </div>
+        </section>
+
+        <section id="experience" class="fade-in">
+            <h2>Experience 💼</h2>
+            <div class="experience-item">
+                <h3>Web Developer and Designer 🖥️</h3>
+                <p>EliteInfraProducts | Jul 2023 – Nov 2023</p>
+                <ul>
+                    <li>Developed and maintained the company website using WordPress and GoDaddy for a 10 crore INR turnover business.</li>
+                    <li>Ensured reliable hosting and seamless website performance by managing domain registration, server uptime, and SSL security.</li>
+                    <li>Worked closely with company leadership to deliver a web presence aligned with business strategies and brand identity.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Web Developer and Designer 🖥️</h3>
+                <p>V.R.Timbers | Mar 2023 – Jun 2023</p>
+                <ul>
+                    <li>Designed, developed, and managed the company's website using WordPress and GoDaddy, enhancing user experience and online presence.</li>
+                    <li>Successfully hosted and maintained the website, ensuring optimal uptime and performance for a company with a 7 crore INR turnover.</li>
+                    <li>Implemented user-friendly interfaces and responsive design, improving customer engagement and accessibility across devices.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Data Science Intern 📊</h3>
+                <p>LetsGrowMore | Aug 2022 – Sept 2022</p>
+                <ul>
+                    <li>Completed a 1-month virtual data science internship, gaining hands-on experience in data analysis, visualization, and machine learning techniques.</li>
+                    <li>Completed ten projects related to Data Science.</li>
+                    <li>Collaborated with a virtual team to analyze and interpret data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Projects 🚀</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <img src="{{ url_for('static', filename='images/sentiment analysis.jpg') }}" alt="Sentiment Analysis Project">
+                    <h3>Sentiment Analysis on Product Rating 🤖</h3>
+                    <p>Developed a web application for sentiment analysis on Amazon electronic product reviews, enabling users to assess and visualize sentiment based on ratings and review text.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/El-Patron2/Sentiment-Analysis" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="{{ url_for('static', filename='images/interaction app.jpg') }}" alt="Interaction App">
+                    <h3>Interaction App (ConversAI) 🗣️</h3>
+                    <p>ConversAI is an innovative application that leverages Google Cloud's Speech-to-Text, Text-to-Speech and Google Natural Language APIs for seamless voice interactions with Sentiment Analysis on Transcription.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/El-Patron2/InteractionApp_SentimentAnalysis" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://voiceinteractionapp-436602.uc.r.appspot.com/" target="_blank" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="{{ url_for('static', filename='images/accommodation eda.jpg') }}" alt="Accommodation EDA Project">
+                    <h3>Accommodation for Students using EDA 🏠</h3>
+                    <p>Conducted exploratory data analysis (EDA) to identify and recommend student accommodation options based on various factors.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/El-Patron2/accommodation-for-students-using-EDA" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="fade-in">
+            <h2>Certifications 🏆</h2>
+            <div class="certifications-container">
+                <ul class="certifications-list">
+                    <li><i class="fas fa-certificate"></i> AWS Cloud Solutions Architect - AWS Professional Certificate</li>
+                    <li><i class="fas fa-certificate"></i> Elements of AI - University of Helsinki</li>
+                    <li><i class="fas fa-certificate"></i> The Nuts and Bolts of Machine Learning - Google Certificate</li>
+                    <li><i class="fas fa-certificate"></i> Foundations of Data Science - Google Certificate</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Get in Touch 📬</h2>
+            <div class="contact-buttons">
+                <a href="mailto:emmanuelmelchizedekvunnava@gmail.com" class="btn">Email Me</a>
+                <a href="https://drive.google.com/file/d/1dRA6mDbmX6UMcZup2QqtZnKA3Mkt0Q2T/view?usp=drive_link" class="btn" target="_blank">View Resume</a>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/emmanuel-melchizedek-vunnava-56b370194/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/El-Patron2" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/El_Patron2/" target="_blank"><i class="fab fa-leetcode"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Emmanuel Melchizedek Vunnava. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
